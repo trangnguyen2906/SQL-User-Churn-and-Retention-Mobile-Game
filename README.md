@@ -30,12 +30,13 @@ The primary focus is to explore:
 
 - 🧠 Possible Reasons Behind Churn: Do uninstall patterns, short session durations, or low level completions precede user drop-off?
   
-The goal is to identify critical user behaviors that can guide strategies to **reduce churn** and **enhance retention** in mobile games.
+🎯 The goal is to **identify critical user behaviors** that can guide strategies to **reduce churn** and **enhance retention** in mobile games.
 
 ### 👤 Who is this project for?  
-✔️ Data analysts & business analysts  
-✔️ Decision-makers & stakeholders  
-
+💡 Data Analysts & Business Analysts: looking to quantify and understand churn
+💡 Game Designers & Developers: aiming to improve retention through data
+💡 Product Managers & Growth Teams: tracking MAU/DAU and user lifecycle
+💡 Stakeholders & Executives: making data-informed decisions on product direction
 
 
 ---
