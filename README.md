@@ -79,12 +79,25 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 
 
-Table 2: Sales Transactions  
+**Table 2: session_start**
+| Column Name         | Data Type | Description                          |
+|---------------------|-----------|--------------------------------------|
+| user_id             | STRING    | Unique identifier for each user      |
+| start_session_date  | DATE      | Date the session started             |
+| start_session_time  | STRING    | Time the session started             |
+| day_of_week         | STRING    | Day of the week when session occurred|
+| platform            | STRING    | OS used during the session           |
+| version             | STRING    | App version used in that session     |
 
-👉🏻 Insert a screenshot of table schema.
 
-
----
+**Table 3: remove_app**
+| Column Name   | Data Type | Description                         |
+|---------------|-----------|-------------------------------------|
+| user_id       | STRING    | Unique identifier for each user     |
+| remove_date   | DATE      | Date the app was uninstalled        |
+| remove_time   | STRING    | Time of uninstall                   |
+| platform      | STRING    | Device OS used at uninstall time    |
+| app_version   | STRING    | Version of the app when removed     |
 
 ## ⚒️ Main Process
 
