@@ -22,21 +22,17 @@ This project analyzes user behavior using data from the **Flood-It freemium mobi
 The primary focus is to explore:
 - 📉 Churn Rate: What percentage of users stop playing after 1, 3, 7, 14, or 30 days?
 
-- 🔁 Retention Rate: How many users return after their install date—and how long do they stay?
+- 🔁 Retention Rate: How many users return after their install date?
 
 - ⚠️ Drop-off Points: At what point in the user journey do most players abandon the game?
 
 - 📊 MAU & DAU: What do monthly and daily active user trends tell us about engagement?
 
 - 🧠 Possible Reasons Behind Churn: Do uninstall patterns, short session durations, or low level completions precede user drop-off?
-
+  
+The goal is to identify critical user behaviors that can guide strategies to **reduce churn** and **enhance retention** in mobile games.
 
 ### 👤 Who is this project for?  
-
-Mention who might benefit from this project 
-
- _Example:_
-
 ✔️ Data analysts & business analysts  
 ✔️ Decision-makers & stakeholders  
 
