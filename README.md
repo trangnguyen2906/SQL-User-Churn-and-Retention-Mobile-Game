@@ -70,9 +70,13 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 | Column Name | Data Type | Description |  
 |-------------|----------|-------------|  
 | user_id     | STRING   | Unique identifier for each user |  
-| install_date        | TEXT     | Product name |  
-| Category    | TEXT     | Product category |  
-| Price       | FLOAT    | Price per unit |  
+| install_date        | DATE     | Date of installation |  
+| source    | STRING     | how user install the app |  
+| device       | STRING    | device that installed the app |  
+| version       | STRING    | app version |
+| install_source       | STRING    | Install method/source (e.g., Play Store) |
+| country       | STRING    | 	Country of the user |
+
 
 
 Table 2: Sales Transactions  
