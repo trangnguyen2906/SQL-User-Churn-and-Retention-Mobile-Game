@@ -106,6 +106,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 - Created simplified views (user_install, session_start, remove_app) from raw Firebase event data for efficient querying.
 
 - Removed/Replaced inappropriate, incomplete, duplicate, null values
+![EDA Screenshot](https://drive.google.com/uc?export=view&id=1EjmHyZ7W1Gi_glXbd6HmLGixCmwKRoZ8)
 
 2️⃣ SQL/ Python Analysis
 
