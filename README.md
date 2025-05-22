@@ -17,10 +17,18 @@ Tools Used: Python
 ### Objective:
 ### 📖 What is this project about? What Business Question will it solve?
 
-This project analyzes user behavior using data from the Flood-It freemium mobile game, available via the Firebase public dataset on Google BigQuery.
+This project analyzes user behavior using data from the **Flood-It freemium mobile game**, available via the **Firebase public dataset on Google BigQuery**.
 
 The primary focus is to explore:
- 
+- 📉 Churn Rate: What percentage of users stop playing after 1, 3, 7, 14, or 30 days?
+
+- 🔁 Retention Rate: How many users return after their install date—and how long do they stay?
+
+- ⚠️ Drop-off Points: At what point in the user journey do most players abandon the game?
+
+- 📊 MAU & DAU: What do monthly and daily active user trends tell us about engagement?
+
+- 🧠 Possible Reasons Behind Churn: Do uninstall patterns, short session durations, or low level completions precede user drop-off?
 
 
 ### 👤 Who is this project for?  
