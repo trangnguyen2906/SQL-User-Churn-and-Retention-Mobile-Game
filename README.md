@@ -34,8 +34,11 @@ The primary focus is to explore:
 
 ### 👤 Who is this project for?  
 💡 Data Analysts & Business Analysts: looking to quantify and understand churn
+
 💡 Game Designers & Developers: aiming to improve retention through data
+
 💡 Product Managers & Growth Teams: tracking MAU/DAU and user lifecycle
+
 💡 Stakeholders & Executives: making data-informed decisions on product direction
 
 
