@@ -1,13 +1,11 @@
 # 📊 Analyze User Churn & Retention of Flood It – A Mobile Game App Using SQL & Python
 
----
 
 ## 📑 Table of Contents  
 1. [📌 Background & Overview](#-background--overview)  
 2. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)  
 3. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
 
----
 
 ## 📌 Background & Overview  
 
