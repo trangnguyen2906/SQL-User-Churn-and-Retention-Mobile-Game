@@ -50,15 +50,15 @@ The primary focus is to explore:
   - .sql (queried directly via BigQuery)
   - .csv (for visualization via GG Colab)
 
-- The original dataset is not clean and complex. Thus, I create a dataset called game_dataset for simpler analysis, which contains:
+⚠️ The original dataset is not clean and complex. Thus, I create a dataset called game_dataset for simpler analysis, which contains:
 
-user_install: install events
+**user_install:** install events
 
-session_start: session activity
+**session_start:** session activity
 
-remove_app: uninstall behavior
+**remove_app:** uninstall behavior
 
-These are view tables created to isolate and query relevant user lifecycle events efficiently.
+These are **view tables** created to isolate and query relevant user lifecycle events efficiently.
 
 ### 📊 Data Structure & Relationships  
 
