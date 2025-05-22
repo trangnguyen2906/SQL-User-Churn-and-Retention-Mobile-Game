@@ -96,7 +96,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 | user_id       | STRING    | Unique identifier for each user     |
 | remove_date   | DATE      | Date the app was uninstalled        |
 | remove_time   | STRING    | Time of uninstall                   |
-| platform      | STRING    | Device OS used at uninstall time    |
+| platform      | STRING    | Device used at uninstall time    |
 | app_version   | STRING    | Version of the app when removed     |
 
 ## ⚒️ Main Process
