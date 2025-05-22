@@ -51,7 +51,9 @@ The primary focus is to explore:
 
 - **Size:** **5.7M rows** covering in-app event logs across **114 days** from 12/06 to 03/10 in 2018
 
-- **Format:** .sql (queried directly via BigQuery); .csv(for visuals in GG colab)
+- **Format:**
+  - .sql (queried directly via BigQuery)
+  - .csv (for visualization via GG Colab)
 ### 📊 Data Structure & Relationships  
 
 #### 1️⃣ Tables Used:  
