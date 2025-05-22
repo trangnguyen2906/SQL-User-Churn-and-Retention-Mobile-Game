@@ -1,4 +1,4 @@
-# 📊 Analyze User Churn & Retention of Flood It – A Mobile Game App Using SQL & Python
+# 📊 Analyze User Churn & Retention of Flood It! Using SQL & Python
 
 
 ## 📑 Table of Contents  
