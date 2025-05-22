@@ -46,10 +46,12 @@ The primary focus is to explore:
 ## 📂 Dataset Description & Data Structure  
 
 ### 📌 Data Source  
-- Source: (Mention where the dataset is obtained from—Kaggle, company database, government sources, etc.)  
-- Size: (Mention the number of rows & columns)  
-- Format: (.csv, .sql, .xlsx, etc.)  
+- Source: Google BigQuery – Public Firebase Analytics Dataset
+  - (Table: firebase-public-project.analytics_153293282.events_2018*)
 
+- Size: 5.7M rows covering in-app event logs across 114 days from 12/06 to 03/10 in 2018
+
+- Format: .sql (queried directly via BigQuery); .csv(for visuals in GG colab)
 ### 📊 Data Structure & Relationships  
 
 #### 1️⃣ Tables Used:  
