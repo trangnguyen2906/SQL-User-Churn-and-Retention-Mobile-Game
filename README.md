@@ -1,7 +1,4 @@
-# 📊 Project Title: RFM Analysis
-Author: Nguyen Huyen Trang  
-Date: YYYY-MM-DD  
-Tools Used: Python
+# 📊 Project Title: Analyze User Churn & Retention of Flood It – A Mobile Game App Using SQL & Python
 
 ---
 
