@@ -50,6 +50,9 @@ The primary focus is to explore:
   - .sql (queried directly via BigQuery)
   - .csv (for visualization via GG Colab)
 
+### 📊 Data Structure & Relationships  
+
+#### 1️⃣ Tables Used:  
 ⚠️ The original dataset is not clean and complex. Thus, I create a dataset called game_dataset for simpler analysis, which contains:
 
 **user_install:** install events
@@ -58,27 +61,16 @@ The primary focus is to explore:
 
 **remove_app:** uninstall behavior
 
-These are **view tables** created to isolate and query relevant user lifecycle events efficiently.
-
-### 📊 Data Structure & Relationships  
-
-#### 1️⃣ Tables Used:  
-Mention how many tables are in the dataset.  
+These are **view tables** created to isolate and query relevant user lifecycle events efficiently.  
 
 #### 2️⃣ Table Schema & Data Snapshot  
 
-Table 1: Products Table  
-
-👉🏻 Insert a screenshot of table schema 
-
-📌If the table is too big, only capture a part of it that contains key metrics you used in the projects or put the table in toggle
-
- _Example:_
+**Table 1: user_install**
 
 | Column Name | Data Type | Description |  
 |-------------|----------|-------------|  
-| Product_ID  | INT      | Unique identifier for each product |  
-| Name        | TEXT     | Product name |  
+| user_id     | STRING   | Unique identifier for each user |  
+| install_date        | TEXT     | Product name |  
 | Category    | TEXT     | Product category |  
 | Price       | FLOAT    | Price per unit |  
 
