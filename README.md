@@ -33,13 +33,13 @@ The primary focus is to explore:
 🎯 The goal is to **identify critical user behaviors** that can guide strategies to **reduce churn** and **enhance retention** in mobile games.
 
 ### 👤 Who is this project for?  
-💡 **Data Analysts & Business Analysts**: looking to quantify and understand churn
+💡**Data Analysts & Business Analysts**: looking to quantify and understand churn
 
-💡 **Game Designers & Developers**: aiming to improve retention through data
+💡**Game Designers & Developers**: aiming to improve retention through data
 
 💡**Product Managers & Growth Teams**: tracking MAU/DAU and user lifecycle
 
-💡 **Stakeholders & Executives**: making data-informed decisions on product direction
+💡**Stakeholders & Executives**: making data-informed decisions on product direction
 
 ---
 
