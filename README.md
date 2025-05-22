@@ -107,10 +107,19 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 - Removed/Replaced inappropriate, incomplete, duplicate, null values
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1EjmHyZ7W1Gi_glXbd6HmLGixCmwKRoZ8" width="30%" />
-  <img src="https://drive.google.com/uc?export=view&id=1-pxxzcfHvq5Wjj1kthoBxJNvLZPKlN6q" width="30%" />
-  <img src="https://drive.google.com/uc?export=view&id=1M4EptsCSuQLvuBrPhcHNJ3Vq5EL-l4LP" width="30%" />
+  <img src="URL_USER_INSTALL" width="60%" />
 </p>
+<p align="center"><em>Figure 1: Schema of <code>user_install_view</code></em></p>
+
+<p align="center">
+  <img src="URL_SESSION_START" width="60%" />
+</p>
+<p align="center"><em>Figure 2: Schema of <code>session_start</code> view</em></p>
+
+<p align="center">
+  <img src="URL_REMOVE_APP" width="60%" />
+</p>
+<p align="center"><em>Figure 3: Schema of <code>remove_app_view</code></em></p>
 
 2️⃣ SQL/ Python Analysis
 
