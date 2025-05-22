@@ -101,17 +101,13 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 ## ⚒️ Main Process
 
-1️⃣ Data Cleaning & Preprocessing  
-2️⃣ Exploratory Data Analysis (EDA)  
-3️⃣ SQL/ Python Analysis 
+1️⃣ Data Cleaning & Preprocessing 
 
-- First, explain codes' purpose - what they do
+- Created simplified views (user_install, session_start, remove_app) from raw Firebase event data for efficient querying.
 
-- Then how your query/ code & Insert screenshots of your result
+- Removed/Replaced inappropriate, incomplete, duplicate, null values
 
-- Finally, explain your observations/ findings from the results  ts findings
-  
- _Describe trends, key metrics, and patterns._  
+2️⃣ SQL/ Python Analysis
 
 ---
 
