@@ -1,14 +1,11 @@
 # 📊 Analyze User Churn & Retention of Flood It! Using SQL & Python
-<div align="center">
 
-## 📄 Table of Contents
+## 📄 **Table of Contents**
 [📌 Background & Overview](#background--overview)  
 [📂 Dataset Description & Data Structure](#dataset-description--data-structure)  
 [🔍 Final Conclusion & Recommendations](#final-conclusion--recommendations)  
 
-</div>
-
-## 📌 Background & Overview  
+## 📌 **Background & Overview  **
 
 ### Objective:
 ### 📖 What is this project about? What Business Question will it solve?
@@ -39,7 +36,7 @@ The primary focus is to explore:
 
 ---
 
-## 📂 Dataset Description & Data Structure  
+## 📂 **Dataset Description & Data Structure ** 
 
 ### 📌 Data Source  
 - **Source:** Google BigQuery – Public Firebase Analytics Dataset
