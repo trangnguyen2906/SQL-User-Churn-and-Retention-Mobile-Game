@@ -2,7 +2,6 @@
 <div align="center">
 
 ## 📄 Table of Contents
----
 [📌 Background & Overview](#background--overview)  
 [📂 Dataset Description & Data Structure](#dataset-description--data-structure)  
 [🔍 Final Conclusion & Recommendations](#final-conclusion--recommendations)  
