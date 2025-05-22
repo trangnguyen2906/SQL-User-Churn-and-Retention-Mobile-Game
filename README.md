@@ -18,6 +18,7 @@ Tools Used: Python
 ### 📖 What is this project about? What Business Question will it solve?
 
 This project analyzes user behavior using data from the Flood-It freemium mobile game, available via the Firebase public dataset on Google BigQuery.
+
 The primary focus is to explore:
  
 
