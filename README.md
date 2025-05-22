@@ -1,11 +1,11 @@
 # 📊 Analyze User Churn & Retention of Flood It! Using SQL & Python
 
 ## 📄 **Table of Contents**
-[📌 Background & Overview](#background--overview)  
-[📂 Dataset Description & Data Structure](#dataset-description--data-structure)  
-[🔍 Final Conclusion & Recommendations](#final-conclusion--recommendations)  
+1. [📌 Background & Overview](#background--overview)  
+2. [📂 Dataset Description & Data Structure](#dataset-description--data-structure)  
+3. [🔍 Final Conclusion & Recommendations](#final-conclusion--recommendations)  
 
-## 📌 **Background & Overview  **
+## 📌 **Background & Overview**
 
 ### Objective:
 ### 📖 What is this project about? What Business Question will it solve?
