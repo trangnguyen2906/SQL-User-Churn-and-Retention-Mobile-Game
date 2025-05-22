@@ -38,7 +38,7 @@ The primary focus is to explore:
 
 ---
 
-## 📂 **Dataset Description & Data Structure ** 
+## 📂 **Dataset Description & Data Structure** 
 
 ### 📌 Data Source  
 - **Source:** Google BigQuery – Public Firebase Analytics Dataset
@@ -49,6 +49,17 @@ The primary focus is to explore:
 - **Format:**
   - .sql (queried directly via BigQuery)
   - .csv (for visualization via GG Colab)
+
+- The original dataset is not clean and complex. Thus, I create a dataset called game_dataset for simpler analysis, which contains:
+
+user_install: install events
+
+session_start: session activity
+
+remove_app: uninstall behavior
+
+These are view tables created to isolate and query relevant user lifecycle events efficiently.
+
 ### 📊 Data Structure & Relationships  
 
 #### 1️⃣ Tables Used:  
