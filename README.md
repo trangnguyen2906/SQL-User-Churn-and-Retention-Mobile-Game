@@ -244,8 +244,15 @@ FROM retention_raw r
 JOIN daily_install c ON r.install_date = c.install_date
 WHERE r.days_after_install <= 14
 ORDER BY r.install_date, r.days_after_install
-
 ```
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1Dq2Ro_2jHbj9hhQzjKyyA0BB86Cs58l6" />
+</p>
+<p align="center"><em>Figure 6: 14-Day Retention Heatmap for Users Who Installed in June</em></p>
+
+
+
+
 
 #### 🔍 **Churn Analysis**
 
