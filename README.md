@@ -118,7 +118,9 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 <p align="center"><em>Figure 2: session_start view</em></p>
 
 2️⃣ SQL/ Python Analysis
-
+> 📊 **Insight:**  
+> D1 retention rate dropped from 30% in June to 22% in August.  
+> This could indicate onboarding friction or technical issues.
 ---
 
 ## 🔎 Final Conclusion & Recommendations  
