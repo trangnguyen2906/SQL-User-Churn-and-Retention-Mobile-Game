@@ -121,6 +121,13 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 🔍 **Retention Analysis**
 > In mobile games, retention measures how well a game keeps players coming back over time. It reflects product stickiness, onboarding success, and long-term engagement. This section focuses on calculating retention-related metrics using SQL with visualizations.
+>
+> SELECT 
+  EXTRACT(MONTH FROM start_session_date) AS month,
+  COUNT(DISTINCT user_id) AS MAU
+FROM `sqlfinal-447808.game_dataset.session_start`
+GROUP BY month
+ORDER BY month ASC
 
 
 🔍 **Churn Analysis**
