@@ -124,7 +124,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 🟡 **Active Users (DAU & MAU):** *How many unique users open the app daily (DAU) and monthly (MAU).*
 ```
--- Daily Active Users
+-- **Daily Active Users** --
   SELECT 
     EXTRACT(MONTH FROM start_session_date) AS month,
     COUNT(DISTINCT user_id) AS MAU
