@@ -319,8 +319,9 @@ ORDER BY r.install_month, r.months_after_install
 
 
 #### 🔍 **Churn Analysis**
-> This section calculates churn rates after specific time intervals (3, 7, 14, and 30 days). Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
+> Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
 
+🟡 **Churn Rates After 3, 7, 14, 30 Days**
 ```
 **WITH installs AS (
   SELECT
