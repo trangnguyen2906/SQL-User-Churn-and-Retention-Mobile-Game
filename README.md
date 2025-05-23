@@ -143,7 +143,9 @@ These are **view tables** created to isolate and query relevant user lifecycle e
   ORDER BY month ASC
 ```
 <p align="center">
-![My Image]("https://drive.google.com/uc?export=view&id=1MbCBFhaAy6kqYTbhMv4mI2-mVBYkAu40")
+  <img src="https://drive.google.com/uc?export=view&id=1MbCBFhaAy6kqYTbhMv4mI2-mVBYkAu40" />
+</p>
+<p align="center"><em>Figure: Daily Active Users Over Time</em></p>
 
 
 #### 🔍 **Churn Analysis**
