@@ -378,8 +378,11 @@ JOIN daily_install d ON r.install_date = d.install_date
 ORDER BY r.install_date;**
 ```
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1-vBAQhzuTHqB0z0XDbtVxkhNPwz0wdOP" width="45%"/>
-  <img src="https://drive.google.com/uc?export=view&id=1kcEI4o0tH8F0tJIQnb6kZi8--bqp0i43" width="45%"/>
+  <img src="https://drive.google.com/uc?export=view&id=1-vBAQhzuTHqB0z0XDbtVxkhNPwz0wdOP" width="60%"/>
+
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1kcEI4o0tH8F0tJIQnb6kZi8--bqp0i43" width="60%"/>
+  
 ---
 
 ## 🔎 Final Conclusion & Recommendations  
