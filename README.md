@@ -101,7 +101,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 ## ⚒️ Main Process
 
-1️⃣ Data Cleaning & Preprocessing 
+### 1️⃣ Data Cleaning & Preprocessing 
 
 - Created simplified views (user_install, session_start, remove_app) from raw Firebase event data for efficient querying.
 
@@ -117,7 +117,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 </p>
 <p align="center"><em>Figure 2: session_start view</em></p>
 
-2️⃣ SQL/ Python Analysis
+### 2️⃣ SQL/ Python Analysis
 
 🔍 **Retention Analysis**
 
