@@ -319,7 +319,62 @@ ORDER BY r.install_month, r.months_after_install
 
 
 #### 🔍 **Churn Analysis**
+> This section calculates churn rates after specific time intervals (3, 7, 14, and 30 days). Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
+
 ```
+**WITH installs AS (
+  SELECT
+    user_id,
+    install_date
+  FROM `sqlfinal-447808.game_dataset.user_install`
+  WHERE install_date BETWEEN '2018-08-01' AND '2018-08-30'
+),
+daily_install AS (
+  SELECT
+    install_date,
+    COUNT(DISTINCT user_id) AS total_users
+  FROM installs
+  GROUP BY install_date
+),
+sessions AS (
+  SELECT
+    user_id,
+    start_session_date
+  FROM `sqlfinal-447808.game_dataset.session_start`
+  WHERE start_session_date BETWEEN '2018-08-01' AND '2018-10-01'
+),
+day_x_active AS (
+  SELECT
+    i.install_date,
+    MIN(DATE_DIFF(s.start_session_date, i.install_date, DAY)) AS first_session_after_install,
+    i.user_id
+  FROM installs i
+  JOIN sessions s ON i.user_id = s.user_id
+  WHERE s.start_session_date >= i.install_date
+  GROUP BY i.install_date, i.user_id
+),
+retention_summary AS (
+  SELECT
+    i.install_date,
+    COUNT(DISTINCT CASE WHEN d.first_session_after_install >= 3 THEN d.user_id END) AS active_day_3,
+    COUNT(DISTINCT CASE WHEN d.first_session_after_install >= 7 THEN d.user_id END) AS active_day_7,
+    COUNT(DISTINCT CASE WHEN d.first_session_after_install >= 14 THEN d.user_id END) AS active_day_14,
+    COUNT(DISTINCT CASE WHEN d.first_session_after_install >= 30 THEN d.user_id END) AS active_day_30
+  FROM installs i
+  LEFT JOIN day_x_active d ON i.user_id = d.user_id AND i.install_date = d.install_date
+  GROUP BY i.install_date
+)
+
+SELECT
+  r.install_date,
+  d.total_users,
+  ROUND(100 - 100 * r.active_day_3 / d.total_users, 1) AS churn_day_3,
+  ROUND(100 - 100 * r.active_day_7 / d.total_users, 1) AS churn_day_7,
+  ROUND(100 - 100 * r.active_day_14 / d.total_users, 1) AS churn_day_14,
+  ROUND(100 - 100 * r.active_day_30 / d.total_users, 1) AS churn_day_30
+FROM retention_summary r
+JOIN daily_install d ON r.install_date = d.install_date
+ORDER BY r.install_date;**
 ```
 
 ---
