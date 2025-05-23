@@ -120,7 +120,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 ### 2️⃣ SQL/ Python Analysis
 
 🔍 **Retention Analysis**
-
+> This section includes SQL queries used to calculate user retention over time. These insights help understand user engagement, onboarding effectiveness, and lifecycle patterns.
 
 
 🔍 **Churn Analysis**
