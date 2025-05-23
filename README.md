@@ -192,8 +192,61 @@ ORDER BY month ASC
 <p align="center"><em>Figure 5: Monthly Install Totals</em></p>
 
 🟡 **Cohort-Based Retention Analysis**
-> 🎯 Retention After 14 Days: Track the percentage of June (or other month) users returning on each day after installation (D1 to D14).
+> 🎯 **Retention After 14 Days**: Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
 This shows short-term engagement quality after onboarding.
+
+```
+WITH installs AS (
+  SELECT
+    user_id,
+    install_date
+  FROM `sqlfinal-447808.game_dataset.user_install`
+  WHERE install_date BETWEEN '2018-06-12' AND '2018-06-30'
+),
+daily_install AS (
+  SELECT
+    install_date,
+    COUNT(DISTINCT user_id) AS num_installer
+  FROM installs
+  GROUP BY install_date
+),
+sessions AS (
+  SELECT
+    user_id,
+    start_session_date
+  FROM `sqlfinal-447808.game_dataset.session_start`
+  WHERE start_session_date BETWEEN '2018-06-12' AND '2018-07-14'
+),
+day_after AS (
+  SELECT DISTINCT
+    i.user_id,
+    i.install_date,
+    DATE_DIFF(s.start_session_date, i.install_date, DAY) AS days_after_install
+  FROM installs i
+  JOIN sessions s ON i.user_id = s.user_id
+  WHERE s.start_session_date >= i.install_date
+),
+retention_raw AS (
+  SELECT
+    install_date,
+    days_after_install,
+    COUNT(DISTINCT user_id) AS active_users
+  FROM day_after
+  GROUP BY install_date, days_after_install
+)
+
+SELECT
+  r.install_date,
+  r.days_after_install,
+  r.active_users,
+  c.num_installer,
+  ROUND(100 * r.active_users / c.num_installer, 1) AS retention_rate
+FROM retention_raw r
+JOIN daily_install c ON r.install_date = c.install_date
+WHERE r.days_after_install <= 14
+ORDER BY r.install_date, r.days_after_install
+
+```
 
 #### 🔍 **Churn Analysis**
 
