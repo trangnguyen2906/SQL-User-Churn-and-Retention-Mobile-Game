@@ -234,7 +234,6 @@ retention_raw AS (
   FROM day_after
   GROUP BY install_date, days_after_install
 )
-
 SELECT
   r.install_date,
   r.days_after_install,
