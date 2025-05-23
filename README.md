@@ -191,6 +191,9 @@ ORDER BY month ASC
 </p>
 <p align="center"><em>Figure 5: Monthly Install Totals</em></p>
 
+🟡 **Cohort-Based Retention Analysis**
+> 🎯 Retention After 14 Days: Track the percentage of June (or other month) users returning on each day after installation (D1 to D14).
+This shows short-term engagement quality after onboarding.
 
 #### 🔍 **Churn Analysis**
 
