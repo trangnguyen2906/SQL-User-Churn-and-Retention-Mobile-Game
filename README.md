@@ -119,12 +119,12 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 ### 2️⃣ SQL/ Python Analysis
 
-🔍 **Retention Analysis**
+#### 🔍 **Retention Analysis**
 > In mobile games, retention measures how well a game keeps players coming back over time. It reflects product stickiness, onboarding success, and long-term engagement. This section focuses on calculating retention-related metrics using SQL with visualizations.
 
-🟡 **DAU & MAU**
+🟡 **Active Users (DAU & MAU):** *How many unique users open the app daily (DAU) and monthly (MAU).*
 
-🔍 **Churn Analysis**
+#### 🔍 **Churn Analysis**
 
 
 ---
