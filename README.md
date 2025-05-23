@@ -143,11 +143,15 @@ These are **view tables** created to isolate and query relevant user lifecycle e
   ORDER BY month ASC
 ```
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1MbCBFhaAy6kqYTbhMv4mI2-mVBYkAu40" width="80%" />
-  <img src="https://drive.google.com/uc?export=view&id=1B2X7QXdkDb10GxfA8CINrGiohGHUgjM6" width="55%" />
+  <img src="https://drive.google.com/uc?export=view&id=1MbCBFhaAy6kqYTbhMv4mI2-mVBYkAu40" width="60%" />
 </p>
-<p align="center"><em>Figure: Daily Active Users Over Time and by Day of Week </em></p>
+<p align="center"><em>Figure 1: Daily Active Users Over Time</em></p>
 
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1B2X7QXdkDb10GxfA8CINrGiohGHUgjM6" width="48%" />
+  <img src="https://drive.google.com/uc?export=view&id=1HTgD8GLMnDbKNMvAOjEGbSCbGYgy64Gy" width="48%" />
+</p>
+<p align="center"><em>Figure 2: DAU by Day of Week (left) and Monthly Active Users Table (right)</em></p>
 
 #### 🔍 **Churn Analysis**
 
