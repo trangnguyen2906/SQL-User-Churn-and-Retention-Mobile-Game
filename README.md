@@ -123,7 +123,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 > In mobile games, retention measures how well a game keeps players coming back over time. It reflects product stickiness, onboarding success, and long-term engagement. This section focuses on calculating retention-related metrics using SQL with visualizations.
 
 🟡 **Active Users (DAU & MAU):** *How many unique users open the app daily (DAU) and monthly (MAU).*
-    🎯 How engaged users are on a daily & monthly basis and detect usage spikes or drops.
+    - 🎯 How engaged users are on a daily & monthly basis and detect usage spikes or drops.
 
 #### 🔍 **Churn Analysis**
 
