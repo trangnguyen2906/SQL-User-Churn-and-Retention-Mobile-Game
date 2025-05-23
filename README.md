@@ -382,7 +382,22 @@ ORDER BY r.install_date;**
 
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1kcEI4o0tH8F0tJIQnb6kZi8--bqp0i43" width="60%"/>
-  
+
+🟡 **Possible Reason for churn/removove app**:
+> Which app versions and platforms have the highest uninstall counts?
+```
+SELECT
+  app_version,
+  platform,
+  COUNT(*) AS num_remove
+FROM `sqlfinal-447808.game_dataset.remove_app`
+GROUP BY 1,2
+ORDER BY 3 DESC
+```
+> How long users wait after their last session before uninstalling the app? (Indicates whether churn is immediate or delayed and may reflect disengagement periods.)
+
+> How many levels on average users complete before uninstalling within a day.
+
 ---
 
 ## 🔎 Final Conclusion & Recommendations  
