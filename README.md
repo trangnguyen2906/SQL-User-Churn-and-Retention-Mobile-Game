@@ -250,6 +250,10 @@ ORDER BY r.install_date, r.days_after_install
 </p>
 <p align="center"><em>Figure 6: 14-Day Retention Heatmap for Users Who Installed in June</em></p>
 
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1xbW5g1lUMrudUxCsBXK_d05cTNfQBCbM" />
+</p>
+<p align="center"><em>Figure 7: Average Retention Rate per Day After Install (All Users)</em></p>
 
 
 
