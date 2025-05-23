@@ -149,7 +149,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1B2X7QXdkDb10GxfA8CINrGiohGHUgjM6" width="55%" />
-  <img src="https://drive.google.com/uc?export=view&id=1HTgD8GLMnDbKNMvAOjEGbSCbGYgy64Gy" width="30%" />
+  <img src="https://drive.google.com/uc?export=view&id=1HTgD8GLMnDbKNMvAOjEGbSCbGYgy64Gy" width="43%" />
 </p>
 <p align="center"><em>Figure 2: DAU by Day of Week and Monthly Active Users Output </em></p>
 
