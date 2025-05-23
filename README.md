@@ -159,6 +159,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 🟡 **Daily & Monthly Install:** The number of new installs each day.
 > 🎯Analyze acquisition trends and evaluate campaign effectiveness.
+
 > 🎯 Supports cohort-based retention analysis and seasonal comparisons.
 
 ```
