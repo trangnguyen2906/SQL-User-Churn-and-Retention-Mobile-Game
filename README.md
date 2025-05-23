@@ -122,7 +122,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 #### 🔍 **Retention Analysis**
 > In mobile games, retention measures how well a game keeps players coming back over time. It reflects product stickiness, onboarding success, and long-term engagement. This section focuses on calculating retention-related metrics using SQL with visualizations.
 
-🟡 **Active Users (DAU & MAU):** *How many unique users open the app daily (DAU) and monthly (MAU).*
+🟡 **Active Users (DAU & MAU):** How many unique users open the app daily (DAU) and monthly (MAU).
 ```
 -- Daily Active Users --
   SELECT 
@@ -157,9 +157,29 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 </p>
 <p align="center"><em>Figure 3: Monthly Active Users Output (MAU Table)</em></p>
 
-🟡 **Daily Install:** *The number of new installs each day.*
+🟡 **Daily & Monthly Install:** The number of new installs each day.
 > 🎯Analyze acquisition trends and evaluate campaign effectiveness.
+> 🎯 Supports cohort-based retention analysis and seasonal comparisons.
 
+```
+-- daily_install --
+SELECT 
+  install_date,
+  COUNT(DISTINCT user_id) AS daily_install
+FROM `sqlfinal-447808.game_dataset.user_install`
+WHERE install_date BETWEEN '2018-06-12' AND '2018-10-03'
+GROUP BY install_date
+ORDER BY install_date ASC
+
+-- monthly_install --
+SELECT 
+  EXTRACT(MONTH FROM install_date) AS month,
+  COUNT(DISTINCT user_id) AS monthly_install
+FROM `sqlfinal-447808.game_dataset.user_install`
+WHERE install_date BETWEEN '2018-06-12' AND '2018-10-03'
+GROUP BY month
+ORDER BY month ASC
+```
 
 
 
