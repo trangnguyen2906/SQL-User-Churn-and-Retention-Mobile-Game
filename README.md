@@ -157,6 +157,12 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 </p>
 <p align="center"><em>Figure 3: Monthly Active Users Output (MAU Table)</em></p>
 
+🟡 **Daily Install:** *The number of new installs each day.*
+> 🎯Analyze acquisition trends and evaluate campaign effectiveness.
+
+
+
+
 #### 🔍 **Churn Analysis**
 
 
