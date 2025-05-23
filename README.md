@@ -124,7 +124,14 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 🟡 **Active Users (DAU & MAU):** *How many unique users open the app daily (DAU) and monthly (MAU).*
 > Monitor how engaged users are on a daily basis and detect usage spikes or drops.
-
+```
+  SELECT 
+    EXTRACT(MONTH FROM start_session_date) AS month,
+    COUNT(DISTINCT user_id) AS MAU
+  FROM `sqlfinal-447808.game_dataset.session_start`
+  GROUP BY month
+  ORDER BY month ASC
+```
 #### 🔍 **Churn Analysis**
 
 
