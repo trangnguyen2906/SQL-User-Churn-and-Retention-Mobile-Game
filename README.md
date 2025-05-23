@@ -160,7 +160,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 🟡 **Daily & Monthly Install:** The number of new installs each day.
 > 🎯Analyze acquisition trends and evaluate campaign effectiveness.
 
-> 🎯 Supports cohort-based retention analysis and seasonal comparisons.
+> 🎯Supports cohort-based retention analysis and seasonal comparisons.
 
 ```
 -- daily_install --
@@ -181,7 +181,15 @@ WHERE install_date BETWEEN '2018-06-12' AND '2018-10-03'
 GROUP BY month
 ORDER BY month ASC
 ```
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1mCOB2ohDncytcraGmJjKApzhiX5yW7Q6" />
+</p>
+<p align="center"><em>Figure 4: Daily Active Users (DAU) and Daily New Installs Over Time</em></p>
 
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=18Slq-1Wl4Sn4Jiq9IR1iLRdbPEN9Sz40" />
+</p>
+<p align="center"><em>Figure 5: Monthly Install Totals</em></p>
 
 
 #### 🔍 **Churn Analysis**
