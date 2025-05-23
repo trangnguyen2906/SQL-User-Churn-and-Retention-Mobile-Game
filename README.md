@@ -144,6 +144,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 ```
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1MbCBFhaAy6kqYTbhMv4mI2-mVBYkAu40" width="70%" />
+
 #### 🔍 **Churn Analysis**
 
 
