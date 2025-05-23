@@ -255,11 +255,72 @@ ORDER BY r.install_date, r.days_after_install
 </p>
 <p align="center"><em>Figure 7: Average Retention Rate per Day After Install (All Users)</em></p>
 
+> 🎯 **Monthly Cohort Retention (Over 4 Months)**: Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
+> 
+```
+-- Retention rate by Month --
+WITH installs AS (
+  SELECT
+    user_id,
+    install_date,
+    FORMAT_DATE('%Y-%m', install_date) AS install_month
+  FROM `sqlfinal-447808.game_dataset.user_install`
+  WHERE install_date BETWEEN '2018-06-01' AND '2018-10-31'
+),
+daily_install AS (
+  SELECT
+    install_month,
+    COUNT(DISTINCT user_id) AS num_installer
+  FROM installs
+  GROUP BY install_month
+),
+sessions AS (
+  SELECT
+    user_id,
+    start_session_date,
+    FORMAT_DATE('%Y-%m', start_session_date) AS session_month
+  FROM `sqlfinal-447808.game_dataset.session_start`
+  WHERE start_session_date BETWEEN '2018-06-01' AND '2018-12-31'
+),
+month_diff AS (
+  SELECT DISTINCT
+    i.user_id,
+    i.install_month,
+    s.session_month,
+    DATE_DIFF(PARSE_DATE('%Y-%m', s.session_month), PARSE_DATE('%Y-%m', i.install_month), MONTH) AS months_after_install
+  FROM installs i
+  JOIN sessions s ON i.user_id = s.user_id
+  WHERE s.start_session_date >= i.install_date
+),
+retention_raw AS (
+  SELECT
+    install_month,
+    months_after_install,
+    COUNT(DISTINCT user_id) AS active_users
+  FROM month_diff
+  GROUP BY install_month, months_after_install
+)
 
+SELECT
+  r.install_month,
+  r.months_after_install,
+  r.active_users,
+  c.num_installer,
+  ROUND(100 * r.active_users / c.num_installer, 1) AS retention_rate
+FROM retention_raw r
+JOIN daily_install c ON r.install_month = c.install_month
+WHERE r.months_after_install <= 4
+ORDER BY r.install_month, r.months_after_install
+```
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1Y-AN70Q3lDigxQu198rkIWjIlm6fERVg" />
+</p>
+<p align="center"><em>Figure 8: Monthly Retention Rate by Install Cohort</em></p>
 
 
 #### 🔍 **Churn Analysis**
-
+```
+```
 
 ---
 
