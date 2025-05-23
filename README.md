@@ -143,7 +143,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
   ORDER BY month ASC
 ```
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1MbCBFhaAy6kqYTbhMv4mI2-mVBYkAu40" width="70%" />
+  ![My Image](https://drive.google.com/file/d/1MbCBFhaAy6kqYTbhMv4mI2-mVBYkAu40/view?usp=sharing)
 
 #### 🔍 **Churn Analysis**
 
