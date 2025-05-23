@@ -118,8 +118,12 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 <p align="center"><em>Figure 2: session_start view</em></p>
 
 2️⃣ SQL/ Python Analysis
- 🔍 Retention 
 
+🔍 **Retention Analysis**
+
+
+
+🔍 **Churn Analysis**
 
 
 ---
