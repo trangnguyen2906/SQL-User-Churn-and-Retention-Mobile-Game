@@ -394,6 +394,13 @@ FROM `sqlfinal-447808.game_dataset.remove_app`
 GROUP BY 1,2
 ORDER BY 3 DESC
 ```
+
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1drlOft_PI4UUtKe3rBf9NzCXHu4Lull_" alt="App Removal by Version" />
+</p>
+<p align="center"><em>Figure: Number of App Removals by App Version & Platform </em></p>
+
+
 > ❓**How long** users wait after their **last session before uninstalling the app**? (Indicates whether churn is immediate or delayed and may reflect disengagement periods.)
 
 ```
@@ -424,6 +431,11 @@ GROUP BY days_after_last_play
 ORDER BY 2 desc
 limit 15;
 ```
+
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1014n8UmJMOS3uHFUWlvlzYGt3SSlF6ot" alt="Days After Last Play Before Removal" />
+</p>
+<p align="center"><em>Figure: Days Between Last Play and App Removal</em></p>
 
 > ❓**How many levels** **on average** users complete before uninstalling within a day.
 ```
@@ -462,6 +474,8 @@ ORDER BY total_level_completions DESC
 )
 select avg(total_level_completions)
 from churn_total_complete
+
+-- Output: 5.3 -- 
 ```
 ---
 
