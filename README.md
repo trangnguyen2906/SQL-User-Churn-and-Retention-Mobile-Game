@@ -342,7 +342,8 @@ ORDER BY r.install_month, r.months_after_install
 #### 🔍 **Churn Analysis**
 > Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
 
-🟡 **Churn Rates After 3, 7, 14, 30 Days**
+<details>
+<summary>🟡 <strong>Churn Rates After 3, 7, 14, 30 Days</strong></summary>
 ```
 **WITH installs AS (
   SELECT
@@ -403,6 +404,8 @@ ORDER BY r.install_date;**
 
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1kcEI4o0tH8F0tJIQnb6kZi8--bqp0i43" width="60%"/>
+
+</details>
 
 🟡 **Possible Reason for churn/removove app**:
 > ❓Which **app versions** and **platforms** have the highest uninstall counts?
