@@ -349,6 +349,7 @@ ORDER BY r.install_month, r.months_after_install
 
 </details>
 
+#### 💡 Observation:
 - 📉 **Sharp Drop After Month 0:** Most cohorts show a big drop from install month to Month 1. For example, June drops from **64.8% to 26.4%**, and August drops from **75.0% to 24.1%**, confirming early churn as a persistent issue.
 - ⚠️ Retention data for **September and October** is **incomplete** due to the dataset ending on **October 3**, so long-term trends for these cohorts are not fully available.
 
