@@ -528,7 +528,7 @@ from churn_total_complete
 
 👉🏻 Based on the insights and findings above, we would recommend the **product team** to consider the following actions:
 
-✨ Key Takeaways:
+### ✨ Key Takeaways:
 
 ✔️ **Improve Early User Experience**: Over **86 percent of users** churn within the **first 3 days**, and uninstall most often occurs on **Day 0**. Focus on **optimizing onboarding, and first-level satisfaction.**
 
@@ -537,4 +537,16 @@ from churn_total_complete
 ✔️ **Target Android Optimization**: All uninstalls occurred on Android, signaling a need for **platform-specific performance tuning**, **crash fixing**, or **UI refinement** for Android users.
 
 ✔️ **Boost Engagement After First Session**: The average churned user completed only 5.3 levels before uninstalling. Introduce **early incentives, daily streaks, or progress hooks** to extend gameplay longevity.
+
+### 📌 Note on Limitations and Strategic Insight
+
+While these findings provide useful behavioral signals, there are a few limitations to keep in mind:
+
+⏳ The dataset only spans **114 days**, and I do not have access to **marketing campaign timelines** or **promotion schedules**. Therefore, the causes behind certain spikes (e.g. DAU or install surges) remain speculative.
+
+📢 Additionally, **without data on ad frequency or user feedback**, we cannot conclude whether **ad fatigue** contributed to user churn.
+
+That said, based on observable patterns, it appears that **Flood-It! prioritizes acquiring new installs** **rather than nurturing long-term users**. However, industry research shows that **acquiring new users is more expensive and less sustainable than retaining long-term ones**. A shift in strategy toward **user retention and deeper engagement** could improve both lifetime value and cost efficiency.
+
+
 
