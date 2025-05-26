@@ -5,9 +5,9 @@
 </p>
 
 ## 📄 **Table of Contents**
-1. [📌 Background & Overview](#-background--overview)
+1. [📌 Background & Overview](#📌-background--overview)
 3. [📂 Dataset Description & Data Structure](#dataset-description--data-structure)
-4. [## ⚒️ Main Process](#dataset-description--data-structure)
+4. [⚒️ Main Process](#dataset-description--data-structure)
 5. [🔍 Final Conclusion & Recommendations](#final-conclusion--recommendations)  
 
 
