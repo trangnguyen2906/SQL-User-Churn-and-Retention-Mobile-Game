@@ -99,7 +99,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 ## ⚒️ Main Process
 
-### 1️⃣ Data Cleaning & Preprocessing 
+## 1️⃣ Data Cleaning & Preprocessing 
 
 - Created simplified views (user_install, session_start, remove_app) from raw Firebase event data for efficient querying.
 
@@ -115,13 +115,12 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 </p>
 <p align="center"><em>Figure 2: session_start view</em></p>
 
-### 2️⃣ SQL/ Python Analysis
+## 2️⃣ SQL/ Python Analysis
 
-#### 🔍 Retention Analysis
+### 🔍 Retention Analysis
 > In mobile games, retention measures how well a game keeps players coming back over time. It reflects product stickiness, onboarding success, and long-term engagement. This section focuses on calculating retention-related metrics using SQL with visualizations.
 
-<details>
- <summary>🟡 <strong>Active Users (DAU & MAU):</strong> How many unique users open the app daily (DAU) and monthly (MAU).</summary>
+#### 🟡 **Active Users (DAU & MAU):** How many unique users open the app daily (DAU) and monthly (MAU).
   
 ```
 -- Daily Active Users --
