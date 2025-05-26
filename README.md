@@ -529,6 +529,7 @@ from churn_total_complete
 👉🏻 Based on the insights and findings above, we would recommend the **product team** to consider the following actions:
 
 ✨ Key Takeaways:
+
 ✔️ **Improve Early User Experience**: Over **86 percent of users** churn within the **first 3 days**, and uninstall most often occurs on **Day 0**. Focus on **optimizing onboarding, and first-level satisfaction.**
 
 ✔️ **Investigate Issues with Version 2.62**: This version alone accounted for over 1,600 uninstalls, a major spike compared to others. A thorough **QA review** and **user feedback loop** is essential for that release.
