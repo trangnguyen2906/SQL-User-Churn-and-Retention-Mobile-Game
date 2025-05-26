@@ -159,12 +159,13 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 </details>
 
 #### 💡 Observation:
-- 📈 Engagement Spikes:A clear surge in daily usage occurred between late June and early July, with DAU peaking above 750 users, likely tied to promotions or new feature releases. Post-spike, the DAU stabilizes between 350–500 users.
-- 📅 Consistent Weekday Activity: DAU remains relatively steady across weekdays, suggesting stable engagement from the user base even outside weekends.
-- 📊 Monthly Active Users (MAU): Although MAU increased from 3,876 (June) to 5,244 (September), June with only ~2 weeks of data still had nearly as many users as July (4,131) and more than August (3,906), suggesting weaker engagement or user quality in July and August.
+- 📈 **Engagement Spikes:** A clear **surge** in daily usage occurred between **late June and early July**, with DAU **peaking** above **750 users**, likely tied to promotions or new feature releases. Post-spike, the DAU **stabilizes between 350–500 users.**
+- 📅 **Consistent Weekday Activity:** DAU remains relatively **steady** across **weekdays**, suggesting stable engagement from the user base even outside weekends.
+- 📊 **Monthly Active Users (MAU):** Although MAU increased from 3,876 (June) to 5,244 (September), June with only ~2 weeks of data still had nearly as many users as July (4,131) and more than August (3,906), suggesting **weaker engagement or user quality in July and August.**
 
-
-🟡 **Daily & Monthly Install:** The number of new installs each day.
+<details>
+ <summary>🟡 <strong>Daily & Monthly Install:</strong>strong> The number of new installs each day.</summary>
+   
 > 🎯Analyze acquisition trends and evaluate campaign effectiveness.
 
 > 🎯Supports cohort-based retention analysis and seasonal comparisons.
@@ -197,6 +198,8 @@ ORDER BY month ASC
   <img src="https://drive.google.com/uc?export=view&id=18Slq-1Wl4Sn4Jiq9IR1iLRdbPEN9Sz40" />
 </p>
 <p align="center"><em>Figure 5: Monthly Install Totals</em></p>
+
+<details>
 
 🟡 **Cohort-Based Retention Analysis**
 > 🎯 **Retention After 14 Days**: Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
