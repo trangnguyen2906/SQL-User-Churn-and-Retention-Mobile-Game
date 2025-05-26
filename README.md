@@ -337,6 +337,7 @@ ORDER BY r.install_month, r.months_after_install
 <p align="center"><em>Figure 8: Monthly Retention Rate by Install Cohort</em></p>
 
 </details>
+</details>
 
 #### 🔍 **Churn Analysis**
 > Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
