@@ -200,6 +200,10 @@ ORDER BY month ASC
 <p align="center"><em>Figure 5: Monthly Install Totals</em></p>
 </details>
 
+#### 💡 Observation:
+- **High MAU in July–August ≠ High Engagement:** Despite relatively high MAU in July (4,131) and August (3,906), the DAU trend shows declining daily activity after early July, stabilizing between 350–500 users. 
+- This suggests that although many users installed the app, **few returned daily**, pointing to weaker stickiness or engagement in those months.
+
 <details>
  <summary>🟡 <strong>Cohort-Based Retention Analysis</strong> </summary>
 
