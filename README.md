@@ -489,6 +489,7 @@ limit 15;
 <p align="center"><em>Figure: Days Between Last Play and App Removal</em></p
 
 #### 💡 Observation:
+
 - ⏱️ **Immediate Uninstalls Are Most Common:** The highest uninstall count (549 users) occurred on the same day as their last session, showing many users **quit immediately after playing.**
 - 📆 **80 percent uninstalled within 3 days:** A majority of users removed the app within just 1 to 3 days after their last session, indicating rapid disengagement following final use.                                                                           
 
@@ -532,6 +533,10 @@ from churn_total_complete
 
 -- Output: 5.3 -- 
 ```
+
+#### 💡 Observation:
+🎮 Users who uninstall within a day complete an average of 5.3 levels before leaving, indicating that early churn often occurs after only limited gameplay experience.
+
 </details>
 
 ---
