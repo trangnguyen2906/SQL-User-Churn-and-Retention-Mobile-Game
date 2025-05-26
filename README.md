@@ -344,8 +344,9 @@ ORDER BY r.install_month, r.months_after_install
 
 <details>
 <summary>🟡 <strong>Churn Rates After 3, 7, 14, 30 Days</strong></summary>
+  
 ```
-**WITH installs AS (
+WITH installs AS (
   SELECT
     user_id,
     install_date
