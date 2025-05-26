@@ -1,7 +1,7 @@
 # 📊 Analyze User Churn & Retention of Flood It! Using SQL & Python
 
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1k0RF6ORvRaTE4SGK9VAR4Apu2B-IsfY6" alt="Descriptive Alt Text" width="700"/>
+  <img src="https://drive.google.com/uc?export=view&id=1k0RF6ORvRaTE4SGK9VAR4Apu2B-IsfY6" alt="Descriptive Alt Text" width="800"/>
 </p>
 
 ## 📄 **Table of Contents**
