@@ -283,7 +283,7 @@ ORDER BY r.install_date, r.days_after_install
 
 
 <details>  
-### <summary> 🎯 <strong>Monthly Cohort Retention (Over 4 Months)</strong> </summary>
+ <summary> 🎯 <strong>Monthly Cohort Retention (Over 4 Months)</strong> </summary>
   
 > Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
 > 
@@ -423,6 +423,10 @@ ORDER BY r.install_date;**
   <img src="https://drive.google.com/uc?export=view&id=1kcEI4o0tH8F0tJIQnb6kZi8--bqp0i43" width="60%"/>
 
 </details>
+
+#### 💡 Observation:
+- 📉 **Massive Early Churn:** **Over 86 percent of users churn** **within the first 3 days**, and by **Day 30**, churn exceeds **95 percent** in August, revealing severe early drop-off
+- 🔁 **June Retained Slightly Better:** June had the lowest Day 30 churn at 91.3 percent, slightly better than July at 90.7 percent and August at 95.4 percent, suggesting stronger user engagement early on
 
 <details>
 <summary>🟡 <strong>Possible Reason for churn/removove app</strong></summary>
