@@ -447,6 +447,10 @@ ORDER BY 3 DESC
 </p>
 <p align="center"><em>Figure: Number of App Removals by App Version & Platform </em></p>
 
+#### 💡 Observation:
+- ❌ **Version 2.62 accounts for the majority of uninstalls with 1,684 removals**, far exceeding all other versions. This may indicate serious usability or performance issues in that specific release.
+- 📱 **All uninstalls occurred on Android**, suggesting that any churn mitigation efforts should focus on Android-specific debugging and optimization.
+
 
 > ❓**How long** users wait after their **last session before uninstalling the app**? (Indicates whether churn is immediate or delayed and may reflect disengagement periods.)
 
