@@ -529,6 +529,11 @@ from churn_total_complete
 👉🏻 Based on the insights and findings above, we would recommend the **product team** to consider the following actions:
 
 ✨ Key Takeaways:
-✔️ **Improve Early User Experience**:
-✔️ Recommendation 2  
-✔️ Recommendation 3
+✔️ **Improve Early User Experience**: Over **86 percent of users** churn within the **first 3 days**, and uninstall most often occurs on **Day 0**. Focus on **optimizing onboarding, and first-level satisfaction.**
+
+✔️ **Investigate Issues with Version 2.62**: This version alone accounted for over 1,600 uninstalls, a major spike compared to others. A thorough **QA review** and **user feedback loop** is essential for that release.
+
+✔️ **Target Android Optimization**: All uninstalls occurred on Android, signaling a need for **platform-specific performance tuning**, **crash fixing**, or **UI refinement** for Android users.
+
+✔️ **Boost Engagement After First Session**: The average churned user completed only 5.3 levels before uninstalling. Introduce **early incentives, daily streaks, or progress hooks** to extend gameplay longevity.
+
