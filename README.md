@@ -283,7 +283,7 @@ ORDER BY r.install_date, r.days_after_install
 
 
 <details>  
-<summary> 🎯 <strong>Monthly Cohort Retention (Over 4 Months)</strong> </summary>
+### <summary> 🎯 <strong>Monthly Cohort Retention (Over 4 Months)</strong> </summary>
   
 > Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
 > 
