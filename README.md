@@ -1,5 +1,8 @@
 # 📊 Analyze User Churn & Retention of Flood It! Using SQL & Python
 
+<p align="center">
+  <img src="https://pattemdigital.com/wp-content/uploads/2023/04/deep-learning-in-gaming.png" alt="Deep Learning in Gaming" width="600"/>
+</p>
 
 ## 📄 **Table of Contents**
 1. [📌 Background & Overview](#background--overview)  
