@@ -275,6 +275,13 @@ ORDER BY r.install_date, r.days_after_install
 
 </details>
 
+#### 💡 Observation:
+- 📉 **Sharp Drop After Day 1:** Retention drops steeply from **67.65% on Day 0** to 16.72% on Day 1, and falls **below 10% by Day 3**, indicating early user churn is a **key issue.**
+- 📊 **Low Long-Term Retention:** From **Day 7 onward**, retention rates stay consistently **below 6.5%**, suggesting limited long-term engagement.
+- 🔁 **Consistent Pattern Across Months:** Similar 14-day retention patterns were observed in other months, confirming this early drop-off is not unique to June but a recurring trend in user behavior.
+
+
+
 <details>  
 <summary> 🎯 <strong>Monthly Cohort Retention (Over 4 Months)</strong> </summary>
   
