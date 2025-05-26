@@ -544,7 +544,7 @@ While these findings provide useful behavioral signals, there are a few limitati
 
 ⏳ The dataset only spans **114 days**, and I do not have access to **marketing campaign timelines** or **promotion schedules**. Therefore, the causes behind certain spikes (e.g. DAU or install surges) remain speculative.
 
-❔ Additionally, **without data on ad frequency or user feedback**, we cannot conclude whether **ad fatigue** contributed to user churn.
+❔ Additionally, **without data on ad frequency or user feedback**, whether **ad fatigue** contributed to user churn or not is remained unclear.
 
 That said, based on observable patterns, it appears that **Flood-It! prioritizes acquiring new installs** **rather than nurturing long-term users**. However, industry research shows that **acquiring new users is more expensive and less sustainable than retaining long-term ones**. A shift in strategy toward **user retention and deeper engagement** could improve both lifetime value and cost efficiency.
 
