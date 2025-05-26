@@ -408,7 +408,9 @@ ORDER BY r.install_date;**
 
 </details>
 
-🟡 **Possible Reason for churn/removove app**:
+<details>
+<summary>🟡 <strong>Possible Reason for churn/removove app</strong></summary>
+
 > ❓Which **app versions** and **platforms** have the highest uninstall counts?
 ```
 SELECT
@@ -502,7 +504,10 @@ from churn_total_complete
 
 -- Output: 5.3 -- 
 ```
+</details>
+
 ---
+
 
 ## 🔎 Final Conclusion & Recommendations  
 
