@@ -155,15 +155,13 @@ These are **view tables** created to isolate and query relevant user lifecycle e
   <img src="https://drive.google.com/uc?export=view&id=1HTgD8GLMnDbKNMvAOjEGbSCbGYgy64Gy" />
 </p>
 <p align="center"><em>Figure 3: Monthly Active Users Output (MAU Table)</em></p>
-</details>
 
 #### 💡 Observation:
 - 📈 **Engagement Spikes:** A clear **surge** in daily usage occurred between **late June and early July**, with DAU **peaking** above **750 users**, likely tied to promotions or new feature releases. Post-spike, the DAU **stabilizes between 350–500 users.**
 - 📅 **Consistent Weekday Activity:** DAU remains relatively **steady** across **weekdays**, suggesting stable engagement from the user base even outside weekends.
 - 📊 **Monthly Active Users (MAU):** Although MAU increased from 3,876 (June) to 5,244 (September), June with only ~2 weeks of data still had nearly as many users as July (4,131) and more than August (3,906), suggesting **weaker engagement or user quality in July and August.**
 
-<details>
- <summary>🟡 <strong>Daily & Monthly Install:</strong> The number of new installs each day.</summary>
+#### 🟡 **Daily & Monthly Install:** The number of new installs each day.
    
 > 🎯Analyze acquisition trends and evaluate campaign effectiveness.
 
@@ -197,19 +195,14 @@ ORDER BY month ASC
   <img src="https://drive.google.com/uc?export=view&id=18Slq-1Wl4Sn4Jiq9IR1iLRdbPEN9Sz40" />
 </p>
 <p align="center"><em>Figure 5: Monthly Install Totals</em></p>
-</details>
 
 #### 💡 Observation:
 - 📊 **High MAU in July–August ≠ High Engagement:** Despite relatively high MAU in July (4,131) and August (3,906), the DAU trend shows declining daily activity after early July, stabilizing between 350–500 users. 
 - ⚠️ This suggests that although many users installed the app, **few returned daily**, pointing to weaker stickiness or engagement in those months.
 
-<details>
- <summary>🟡 <strong>Cohort-Based Retention Analysis</strong> </summary>
-
-<details>  
-<summary> 🎯 <strong>Retention After 14 Days</strong> </summary>
+#### 🟡 Cohort-Based Retention Analysis
   
-> Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
+> 🎯 **Retention After 14 Days:** Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
 This shows short-term engagement quality after onboarding.
 
 ```
@@ -272,20 +265,14 @@ ORDER BY r.install_date, r.days_after_install
 </p>
 <p align="center"><em>Figure 7: Average Retention Rate per Day After Install (All Users)</em></p>
 
-</details>
 
 #### 💡 Observation:
 - 📉 **Sharp Drop After Day 1:** Retention drops steeply from **67.65% on Day 0** to 16.72% on Day 1, and falls **below 10% by Day 3**, indicating early user churn is a **key issue.**
 - 📊 **Low Long-Term Retention:** From **Day 7 onward**, retention rates stay consistently **below 6.5%**, suggesting limited long-term engagement.
 - 🔁 **Consistent Pattern Across Months:** Similar 14-day retention patterns were observed in other months, confirming this early drop-off is not unique to June but a recurring trend in user behavior.
 
+> 🎯 **Monthly Cohort Retention (Over 4 Months):** Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
 
-
-<details>  
- <summary> 🎯 <strong>Monthly Cohort Retention (Over 4 Months)</strong> </summary>
-  
-> Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
-> 
 ```
 -- Retention rate by Month --
 WITH installs AS (
@@ -346,19 +333,16 @@ ORDER BY r.install_month, r.months_after_install
 </p>
 <p align="center"><em>Figure 8: Monthly Retention Rate by Install Cohort</em></p>
 
-</details>
 
 #### 💡 Observation:
 - 📉 **Sharp Drop After Month 0:** Most cohorts show a big drop from install month to Month 1. For example, June drops from **64.8% to 26.4%**, and August drops from **75.0% to 24.1%**, confirming early churn as a persistent issue.
 - ⚠️ Retention data for **September and October** is **incomplete** due to the dataset ending on **October 3**, so long-term trends for these cohorts are not fully available.
 
-</details>
 
-#### 🔍 **Churn Analysis**
+### 🔍 **Churn Analysis**
 > Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
 
-<details>
-<summary>🟡 <strong>Churn Rates After 3, 7, 14, 30 Days</strong></summary>
+#### 🟡 Churn Rates After 3, 7, 14, 30 Days
   
 ```
 WITH installs AS (
@@ -421,16 +405,15 @@ ORDER BY r.install_date;**
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1kcEI4o0tH8F0tJIQnb6kZi8--bqp0i43" width="60%"/>
 
-</details>
 
 #### 💡 Observation:
 - 📉 **Massive Early Churn:** **Over 86 percent of users churn** **within the first 3 days**, and by **Day 30**, churn exceeds **95 percent** in August, revealing severe early drop-off
 - 🔁 **June Retained Slightly Better:** June had the lowest Day 30 churn at 91.3 percent, slightly better than July at 90.7 percent and August at 95.4 percent, suggesting stronger user engagement early on
 
-<details>
-<summary>🟡 <strong>Possible Reason for churn/removove app</strong></summary>
+#### 🟡 Possible Reason for churn/removove app
 
 > ❓Which **app versions** and **platforms** have the highest uninstall counts?
+
 ```
 SELECT
   app_version,
