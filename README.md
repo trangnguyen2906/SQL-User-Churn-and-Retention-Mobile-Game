@@ -526,9 +526,9 @@ from churn_total_complete
 
 ## 🔎 Final Conclusion & Recommendations  
 
-👉🏻 Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following:  
+👉🏻 Based on the insights and findings above, we would recommend the **product team** to consider the following actions:
 
-📌 Key Takeaways:  
-✔️ Recommendation 1  
+✨ Key Takeaways:
+✔️ **Improve Early User Experience**:
 ✔️ Recommendation 2  
 ✔️ Recommendation 3
