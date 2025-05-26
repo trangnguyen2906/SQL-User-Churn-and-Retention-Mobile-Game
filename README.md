@@ -200,7 +200,8 @@ ORDER BY month ASC
 <p align="center"><em>Figure 5: Monthly Install Totals</em></p>
 </details>
 
-🟡 **Cohort-Based Retention Analysis**
+<details>
+ <summary>🟡 <strong>Cohort-Based Retention Analysis</strong> </summary>
 > 🎯 **Retention After 14 Days**: Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
 This shows short-term engagement quality after onboarding.
 
@@ -264,6 +265,8 @@ ORDER BY r.install_date, r.days_after_install
 </p>
 <p align="center"><em>Figure 7: Average Retention Rate per Day After Install (All Users)</em></p>
 
+</details>
+  
 > 🎯 **Monthly Cohort Retention (Over 4 Months)**: Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
 > 
 ```
