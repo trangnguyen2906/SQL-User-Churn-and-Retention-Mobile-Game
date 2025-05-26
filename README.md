@@ -529,7 +529,7 @@ from churn_total_complete
 
 ## 🔎 Final Conclusion & Recommendations  
 
-👉🏻 Based on the insights and findings above, we would recommend the **product team** to consider the following actions:
+👉🏻 Based on the insights and findings above, I would recommend the **product team** to consider the following actions:
 
 ### ✨ Key Takeaways:
 
