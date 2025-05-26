@@ -486,7 +486,11 @@ limit 15;
 <p align="center">
   <img src="https://drive.google.com/uc?export=view&id=1014n8UmJMOS3uHFUWlvlzYGt3SSlF6ot" alt="Days After Last Play Before Removal" />
 </p>
-<p align="center"><em>Figure: Days Between Last Play and App Removal</em></p>
+<p align="center"><em>Figure: Days Between Last Play and App Removal</em></p
+
+#### 💡 Observation:
+- ⏱️ **Immediate Uninstalls Are Most Common:** The highest uninstall count (549 users) occurred on the same day as their last session, showing many users **quit immediately after playing.**
+- 📆 **80 percent uninstalled within 3 days:** A majority of users removed the app within just 1 to 3 days after their last session, indicating rapid disengagement following final use.                                                                           
 
 > ❓**How many levels** **on average** users complete before uninstalling within a day.
 ```
