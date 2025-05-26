@@ -202,7 +202,8 @@ ORDER BY month ASC
 
 <details>
  <summary>🟡 <strong>Cohort-Based Retention Analysis</strong> </summary>
-  
+
+<details>  
 > 🎯 **Retention After 14 Days**: Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
 This shows short-term engagement quality after onboarding.
 
@@ -330,6 +331,7 @@ ORDER BY r.install_month, r.months_after_install
 </p>
 <p align="center"><em>Figure 8: Monthly Retention Rate by Install Cohort</em></p>
 
+</details>
 
 #### 🔍 **Churn Analysis**
 > Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
