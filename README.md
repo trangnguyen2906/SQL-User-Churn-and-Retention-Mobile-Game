@@ -126,7 +126,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 #### 🟡 **Active Users (DAU & MAU):** How many unique users open the app daily (DAU) and monthly (MAU).
   
-```
+```sql 
 -- Daily Active Users --
   SELECT 
     EXTRACT(MONTH FROM start_session_date) AS month,
@@ -171,7 +171,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 > 🎯Supports cohort-based retention analysis and seasonal comparisons.
 
-```
+```sql
 -- daily_install --
 SELECT 
   install_date,
@@ -209,7 +209,7 @@ ORDER BY month ASC
 > 🎯 **Retention After 14 Days:** Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
 This shows short-term engagement quality after onboarding.
 
-```
+```sql
 WITH installs AS (
   SELECT
     user_id,
@@ -277,7 +277,7 @@ ORDER BY r.install_date, r.days_after_install
 
 > 🎯 **Monthly Cohort Retention (Over 4 Months):** Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
 
-```
+```sql
 -- Retention rate by Month --
 WITH installs AS (
   SELECT
@@ -348,7 +348,7 @@ ORDER BY r.install_month, r.months_after_install
 
 #### 🟡 Churn Rates After 3, 7, 14, 30 Days
   
-```
+```sql
 WITH installs AS (
   SELECT
     user_id,
@@ -418,7 +418,7 @@ ORDER BY r.install_date;**
 
 > ❓Which **app versions** and **platforms** have the highest uninstall counts?
 
-```
+```sql
 SELECT
   app_version,
   platform,
@@ -440,7 +440,7 @@ ORDER BY 3 DESC
 
 > ❓**How long** users wait after their **last session before uninstalling the app**? (Indicates whether churn is immediate or delayed and may reflect disengagement periods.)
 
-```
+```sql
 WITH last_session AS (
   SELECT
     user_id,
@@ -480,7 +480,7 @@ limit 15;
 - 📆 **80 percent uninstalled within 3 days:** A majority of users removed the app within just 1 to 3 days after their last session, indicating rapid disengagement following final use.                                                                           
 
 > ❓**How many levels** **on average** users complete before uninstalling within a day.
-```
+```sql
 WITH user_first_last_day AS (
   SELECT
     user_pseudo_id,
