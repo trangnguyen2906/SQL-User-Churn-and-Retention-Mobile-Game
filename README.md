@@ -136,7 +136,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
   ORDER BY month ASC
 ```
 
-```
+```sql
 -- Monthly Active Users --
   SELECT 
     EXTRACT(MONTH FROM start_session_date) AS month,
