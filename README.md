@@ -16,7 +16,7 @@
 ### Objective:
 ### 📖 What is this project about? What Business Question will it solve?
 
-This project analyzes user behavior using data from the **Flood-It freemium mobile game**, available via the **Firebase public dataset on Google BigQuery**, using SQL and Python (for visualization) 
+This project analyzes user behavior using data from the **Flood-It freemium mobile game**, available via the **Firebase public dataset on Google BigQuery**, using **SQL** and **Python (for visualization)** 
 
 The primary focus is to explore:
 - 📉 **Churn Rate:** What percentage of users stop playing after 1, 3, 7, 14, or 30 days?
