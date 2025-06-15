@@ -117,7 +117,7 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 
 ---
 
-### 🧩 `user_install` View  
+**🧩 `user_install` View**  
 **Goal:** Extract clean install-related user data.
 
 <details>
@@ -133,7 +133,7 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 
 ---
 
-### 🧩 `remove_app` View  
+**🧩 `remove_app` View**  
 **Goal:** Identify genuine uninstall events.
 
 <details>
@@ -144,6 +144,18 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 - Included uninstall-related fields: `platform` and `app_version`  
 - Excluded users who had any activity after uninstall (via `LEFT JOIN`)  
 - Kept only uninstall records that marked actual user exit  
+</details>
+
+**🧩 `session_start` View** 
+**Goal:** Track user activity sessions.
+
+<details>
+<summary>📋 Steps</summary>
+
+- Filtered for `event_name = 'session_start'`  
+- Extracted `start_session_date`, `start_session_time`, and `day_of_week`  
+- Captured `platform` and `app version` at session time  
+- Sorted sessions chronologically
 </details>
 
 ## 2️⃣ SQL/ Python Analysis
