@@ -115,9 +115,9 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 I transformed raw Firebase event logs into simplified, queryable views to support retention and churn analysis. This involved cleaning, filtering, and restructuring the data into three main views.
 
----
 
 **🧩 `user_install` View**  
+
 **Goal:** Extract clean install-related user data.
 
 <details>
@@ -131,9 +131,9 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 - Removed records with missing install source  
 </details>
 
----
 
 **🧩 `remove_app` View**  
+
 **Goal:** Identify genuine uninstall events.
 
 <details>
@@ -147,6 +147,7 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 </details>
 
 **🧩 `session_start` View** 
+
 **Goal:** Track user activity sessions.
 
 <details>
