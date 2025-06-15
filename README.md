@@ -113,7 +113,7 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 ## 1️⃣ Data Cleaning & Preprocessing 
 
-I transformed raw Firebase event logs into simplified, queryable views to support retention and churn analysis. This involved cleaning, filtering, and restructuring the data into three main views.
+I transformed raw Firebase event logs into simplified, queryable views to support retention and churn analysis. This involved cleaning, filtering, and restructuring the data into **3 main views:**
 
 
 **🧩 `user_install` View** : Install-related user data.
