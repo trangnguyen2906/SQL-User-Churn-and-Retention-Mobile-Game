@@ -113,19 +113,38 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 ## 1️⃣ Data Cleaning & Preprocessing 
 
-- Created simplified views (user_install, session_start, remove_app) from raw Firebase event data for efficient querying.
+I transformed raw Firebase event logs into simplified, queryable views to support retention and churn analysis. This involved cleaning, filtering, and restructuring the data into three main views.
 
-- Removed/Replaced inappropriate, incomplete, duplicate, null values
-<p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1EjmHyZ7W1Gi_glXbd6HmLGixCmwKRoZ8" width="45%" />
-  <img src="https://drive.google.com/uc?export=view&id=1M4EptsCSuQLvuBrPhcHNJ3Vq5EL-l4LP" width="45%" />
-</p>
-<p align="center"><em>Figure 1: user_install view and remove_app view (right)</em></p>
+---
 
-<p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1-pxxzcfHvq5Wjj1kthoBxJNvLZPKlN6q" width="50%" />
-</p>
-<p align="center"><em>Figure 2: session_start view</em></p>
+### 🧩 `user_install` View  
+**Goal:** Extract clean install-related user data.
+
+<details>
+<summary>📋 Steps</summary>
+
+- Converted `user_first_touch_timestamp` into `install_date` and `install_time`  
+- Cleaned the `source` field by removing special characters  
+- Standardized `install_source` (e.g., mapped `com.android.vending` → `android`)  
+- Parsed `version` into components to assess version recency  
+- Used `ROW_NUMBER()` to retain only the most recent install per user  
+- Removed records with missing install source  
+</details>
+
+---
+
+### 🧩 `remove_app` View  
+**Goal:** Identify genuine uninstall events.
+
+<details>
+<summary>📋 Steps</summary>
+
+- Filtered for `event_name = 'app_remove'`  
+- Extracted `remove_date` and `remove_time` from event timestamp  
+- Included uninstall-related fields: `platform` and `app_version`  
+- Excluded users who had any activity after uninstall (via `LEFT JOIN`)  
+- Kept only uninstall records that marked actual user exit  
+</details>
 
 ## 2️⃣ SQL/ Python Analysis
 
