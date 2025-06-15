@@ -16,18 +16,18 @@
 ### Objective:
 ### 📖 What is this project about? What Business Question will it solve?
 
-This project analyzes user behavior using data from the **Flood-It freemium mobile game**, available via the **Firebase public dataset on Google BigQuery**.
+This project analyzes user behavior using data from the **Flood-It freemium mobile game** using SQL and Python (for visualization) , available via the **Firebase public dataset on Google BigQuery**.
 
 The primary focus is to explore:
-- 📉 Churn Rate: What percentage of users stop playing after 1, 3, 7, 14, or 30 days?
+- 📉 **Churn Rate:** What percentage of users stop playing after 1, 3, 7, 14, or 30 days?
 
-- 🔁 Retention Rate: How many users return after their install date?
+- 🔁 **Retention Rate**: How many users return after their install date?
 
-- ⚠️ Drop-off Points: At what point in the user journey do most players abandon the game?
+- ⚠️ **Drop-off Points**: At what point in the user journey do most players abandon the game?
 
-- 📊 MAU & DAU: What do monthly and daily active user trends tell us about engagement?
+- 📊 **MAU & DAU**: What do monthly and daily active user trends tell us about engagement?
 
-- 🧠 Possible Reasons Behind Churn: Do uninstall patterns, short session durations, or low level completions precede user drop-off?
+- 🧠 **Possible Reasons Behind Churn**: Do uninstall patterns, short session durations, or low level completions precede user drop-off?
   
 🎯 The goal is to **identify critical user behaviors** that can guide strategies to **reduce churn** and **enhance retention** in mobile games.
 
@@ -67,39 +67,47 @@ These are **view tables** created to isolate and query relevant user lifecycle e
 
 #### 2️⃣ Table Schema & Data Snapshot  
 
-**Table 1: user_install**
+<details>
+<summary>📄 <strong>Table 1: user_install – View Schema</strong></summary>
 
-| Column Name | Data Type | Description |  
-|-------------|----------|-------------|  
-| user_id     | STRING   | Unique identifier for each user |  
-| install_date        | DATE     | Date of installation |  
-| source    | STRING     | how user install the app |  
-| device       | STRING    | device that installed the app |  
-| version       | STRING    | app version |
-| install_source       | STRING    | Install method/source (e.g., Play Store) |
-| country       | STRING    | 	Country of the user |
+| Column Name     | Data Type | Description                                |
+|-----------------|-----------|--------------------------------------------|
+| user_id         | STRING    | Unique identifier for each user            |
+| install_date    | DATE      | Date of installation                       |
+| source          | STRING    | How user installed the app                 |
+| device          | STRING    | Device that installed the app              |
+| version         | STRING    | App version                                |
+| install_source  | STRING    | Install method/source (e.g., Play Store)   |
+| country         | STRING    | Country of the user                        |
 
+</details>
 
+<details>
+<summary>📄 <strong>Table 2: session_start – View Schema</strong></summary>
 
-**Table 2: session_start**
-| Column Name         | Data Type | Description                          |
-|---------------------|-----------|--------------------------------------|
-| user_id             | STRING    | Unique identifier for each user      |
-| start_session_date  | DATE      | Date the session started             |
-| start_session_time  | STRING    | Time the session started             |
-| day_of_week         | STRING    | Day of the week when session occurred|
-| platform            | STRING    | OS used during the session           |
-| version             | STRING    | App version used in that session     |
+| Column Name        | Data Type | Description                               |
+|--------------------|-----------|-------------------------------------------|
+| user_id            | STRING    | Unique identifier for each user           |
+| start_session_date | DATE      | Date the session started                  |
+| start_session_time | STRING    | Time the session started                  |
+| day_of_week        | STRING    | Day of the week when session occurred     |
+| platform           | STRING    | OS used during the session                |
+| version            | STRING    | App version used in that session          |
 
+</details>
 
-**Table 3: remove_app**
-| Column Name   | Data Type | Description                         |
-|---------------|-----------|-------------------------------------|
-| user_id       | STRING    | Unique identifier for each user     |
-| remove_date   | DATE      | Date the app was uninstalled        |
-| remove_time   | STRING    | Time of uninstall                   |
-| platform      | STRING    | Device used at uninstall time    |
-| app_version   | STRING    | Version of the app when removed     |
+<details>
+<summary>📄 <strong>Table 3: remove_app – View Schema</strong></summary>
+
+| Column Name   | Data Type | Description                          |
+|---------------|-----------|--------------------------------------|
+| user_id       | STRING    | Unique identifier for each user      |
+| remove_date   | DATE      | Date the app was uninstalled         |
+| remove_time   | STRING    | Time of uninstall                    |
+| platform      | STRING    | Device used at uninstall time        |
+| app_version   | STRING    | Version of the app when removed      |
+
+</details>
 
 ## ⚒️ Main Process
 
