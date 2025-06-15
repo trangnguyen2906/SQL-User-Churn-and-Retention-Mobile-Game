@@ -568,13 +568,44 @@ from churn_total_complete
 
 ### ✨ Key Takeaways:
 
-✔️ **Improve Early User Experience**: Over **86 percent of users** churn within the **first 3 days**, and uninstall most often occurs on **Day 0**. Focus on **optimizing onboarding, and first-level satisfaction.**
+#### 🔻 1. Reduce Churn
 
-✔️ **Investigate Issues with Version 2.62**: This version alone accounted for over 1,600 uninstalls, a major spike compared to others. A thorough **QA review** and **user feedback loop** is essential for that release.
+✔️ **Improve Onboarding & First-Day Experience**  
 
-✔️ **Target Android Optimization**: All uninstalls occurred on Android, signaling a need for **platform-specific performance tuning**, **crash fixing**, or **UI refinement** for Android users.
+Over 86% of users churn within the first 3 days, and a large portion uninstall the app on **Day 0**.  
 
-✔️ **Boost Engagement After First Session**: The average churned user completed only 5.3 levels before uninstalling. Introduce **early incentives, daily streaks, or progress hooks** to extend gameplay longevity.
+→ Focus on smoother onboarding flows, clearer game tutorials, and more engaging first-level design.
+
+✔️ **Fix Version-Specific Issues (v2.62)**  
+
+Version **2.62** alone caused over **1,600 uninstalls**, far more than any other version.  
+
+→ Conduct a thorough **QA review**, debug performance issues, and gather **user feedback** for that release.
+
+✔️ **Target Android-Specific Optimization**  
+All app removals occurred on **Android devices**.  
+
+→ Implement platform-specific **crash fixes**, improve **load speed**, and ensure **UI responsiveness** on Android.
+
+#### 🔺 2. Enhance Retention
+
+✔️ **Strengthen Engagement After First Session**  
+
+Churned users completed only **5.3 levels** on average before leaving.  
+
+→ Add **progressive rewards**, **early incentives**, or **daily streak mechanics** to encourage continued play.
+
+✔️ **Monitor Session Behavior to Personalize Content**  
+
+Retention drops consistently after **Day 1–3**.  
+
+→ Consider triggering **in-game messages**, **hints**, or **milestone nudges** based on user inactivity patterns.
+
+✔️ **Improve Long-Term Value with Monthly Cohort Analysis**  
+
+Retention beyond **7 days** stays below **6.5%**, showing poor long-term stickiness.
+
+→ Design **event-driven content** or **weekly challenges** that keep users active beyond the first week.
 
 ### 📌 Note on Limitations and Strategic Insight
 
