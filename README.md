@@ -160,7 +160,7 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 ### a. 🔍 Retention Analysis
 > In mobile games, retention measures how well a game keeps players coming back over time. It reflects product stickiness, onboarding success, and long-term engagement. This section focuses on calculating retention-related metrics using SQL with visualizations.
 
-#### 🟡 **Active Users (DAU & MAU):** How many unique users open the app daily (DAU) and monthly (MAU).
+### 🟡 **Active Users (DAU & MAU):** How many unique users open the app daily (DAU) and monthly (MAU).
   
 ```sql 
 -- Daily Active Users --
@@ -196,16 +196,15 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 </p>
 <p align="center"><em>Figure 3: Monthly Active Users Output (MAU Table)</em></p>
 
-#### 💡 Observation:
+### 💡 Observation:
 - 📈 **Engagement Spikes:** A clear **surge** in daily usage occurred between **late June and early July**, with DAU **peaking** above **750 users**, likely tied to promotions or new feature releases. Post-spike, the DAU **stabilizes between 350–500 users.**
 - 📅 **Consistent Weekday Activity:** DAU remains relatively **steady** across **weekdays**, suggesting stable engagement from the user base even outside weekends.
 - 📊 **Monthly Active Users (MAU):** Although MAU increased from 3,876 (June) to 5,244 (September), June with only ~2 weeks of data still had nearly as many users as July (4,131) and more than August (3,906), suggesting **weaker engagement or user quality in July and August.**
 
-#### 🟡 **Daily & Monthly Install:** The number of new installs each day.
+### 🟡 **Daily & Monthly Install:** The number of new installs each day.
    
-> 🎯Analyze acquisition trends and evaluate campaign effectiveness.
-
-  🎯Supports cohort-based retention analysis and seasonal comparisons.
+- 🎯Analyze acquisition trends and evaluate campaign effectiveness.
+- 🎯Supports cohort-based retention analysis and seasonal comparisons.
 
 ```sql
 -- daily_install --
@@ -236,13 +235,13 @@ ORDER BY month ASC
 </p>
 <p align="center"><em>Figure 5: Monthly Install Totals</em></p>
 
-#### 💡 Observation:
+### 💡 Observation:
 - 📊 **High MAU in July–August ≠ High Engagement:** Despite relatively high MAU in July (4,131) and August (3,906), the DAU trend shows declining daily activity after early July, stabilizing between 350–500 users. 
 - ⚠️ This suggests that although many users installed the app, **few returned daily**, pointing to weaker stickiness or engagement in those months.
 
-#### 🟡 Cohort-Based Retention Analysis
+### 🟡 Cohort-Based Retention Analysis
   
-> 🎯 **Retention After 14 Days:** Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
+**1.** 🎯 **Retention After 14 Days:** Track the percentage of June (or other months) users returning on each day after installation (D1 to D14).
 This shows short-term engagement quality after onboarding.
 
 ```sql
@@ -306,12 +305,12 @@ ORDER BY r.install_date, r.days_after_install
 <p align="center"><em>Figure 7: Average Retention Rate per Day After Install (All Users)</em></p>
 
 
-#### 💡 Observation:
+### 💡 Observation:
 - 📉 **Sharp Drop After Day 1:** Retention drops steeply from **67.65% on Day 0** to 16.72% on Day 1, and falls **below 10% by Day 3**, indicating early user churn is a **key issue.**
 - 📊 **Low Long-Term Retention:** From **Day 7 onward**, retention rates stay consistently **below 6.5%**, suggesting limited long-term engagement.
 - 🔁 **Consistent Pattern Across Months:** Similar 14-day retention patterns were observed in other months, confirming this early drop-off is not unique to June but a recurring trend in user behavior.
 
-> 🎯 **Monthly Cohort Retention (Over 4 Months):** Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
+**2.** 🎯 **Monthly Cohort Retention (Over 4 Months):** Measure long-term retention for monthly cohorts (e.g., June–October). This provides insight into user lifetime engagement trends.
 
 ```sql
 -- Retention rate by Month --
@@ -374,7 +373,7 @@ ORDER BY r.install_month, r.months_after_install
 <p align="center"><em>Figure 8: Monthly Retention Rate by Install Cohort</em></p>
 
 
-#### 💡 Observation:
+### 💡 Observation:
 - 📉 **Sharp Drop After Month 0:** Most cohorts show a big drop from install month to Month 1. For example, June drops from **64.8% to 26.4%**, and August drops from **75.0% to 24.1%**, confirming early churn as a persistent issue.
 - ⚠️ Retention data for **September and October** is **incomplete** due to the dataset ending on **October 3**, so long-term trends for these cohorts are not fully available.
 
