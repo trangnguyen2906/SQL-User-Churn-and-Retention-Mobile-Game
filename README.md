@@ -559,8 +559,6 @@ from churn_total_complete
 ### 💡 Observation:
 🎮 Users who uninstall within a day complete an average of **5.3 levels** before leaving, indicating that early churn often occurs after only limited gameplay experience.
 
-</details>
-
 ---
 
 
