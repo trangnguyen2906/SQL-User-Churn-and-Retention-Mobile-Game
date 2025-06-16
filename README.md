@@ -381,7 +381,7 @@ ORDER BY r.install_month, r.months_after_install
 ### b. 🔍 **Churn Analysis**
 > Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
 
-#### 🟡 Churn Rates After 3, 7, 14, 30 Days
+### 🟡 Churn Rates After 3, 7, 14, 30 Days
   
 ```sql
 WITH installs AS (
@@ -445,13 +445,13 @@ ORDER BY r.install_date;**
   <img src="https://drive.google.com/uc?export=view&id=1kcEI4o0tH8F0tJIQnb6kZi8--bqp0i43" width="60%"/>
 
 
-#### 💡 Observation:
+### 💡 Observation:
 - 📉 **Massive Early Churn:** **Over 86 percent of users churn** **within the first 3 days**, and by **Day 30**, churn exceeds **95 percent** in August, revealing severe early drop-off
 - 🔁 **June Retained Slightly Better:** June had the lowest Day 30 churn at 91.3 percent, slightly better than July at 90.7 percent and August at 95.4 percent, suggesting stronger user engagement early on
 
-#### 🟡 Possible Reason for churn/removove app
+### 🟡 Possible Reason for churn/removove app
 
-> ❓Which **app versions** and **platforms** have the highest uninstall counts?
+**1.** ❓Which **app versions** and **platforms** have the highest uninstall counts?
 
 ```sql
 SELECT
@@ -468,12 +468,12 @@ ORDER BY 3 DESC
 </p>
 <p align="center"><em>Figure: Number of App Removals by App Version & Platform </em></p>
 
-#### 💡 Observation:
+### 💡 Observation:
 - ❌ **Version 2.62 accounts for the majority of uninstalls with 1,684 removals**, far exceeding all other versions. This may indicate serious usability or performance issues in that specific release.
 - 📱 **All uninstalls occurred on Android**, suggesting that any churn mitigation efforts should focus on Android-specific debugging and optimization.
 
 
-> ❓**How long** users wait after their **last session before uninstalling the app**? (Indicates whether churn is immediate or delayed and may reflect disengagement periods.)
+**2.** ❓**How long** users wait after their **last session before uninstalling the app**? (Indicates whether churn is immediate or delayed and may reflect disengagement periods.)
 
 ```sql
 WITH last_session AS (
@@ -509,12 +509,13 @@ limit 15;
 </p>
 <p align="center"><em>Figure: Days Between Last Play and App Removal</em></p
 
-#### 💡 Observation:
+### 💡 Observation:
 
 - ⏱️ **Immediate Uninstalls Are Most Common:** The highest uninstall count (549 users) occurred on the same day as their last session, showing many users **quit immediately after playing.**
 - 📆 **80 percent uninstalled within 3 days:** A majority of users removed the app within just 1 to 3 days after their last session, indicating rapid disengagement following final use.                                                                           
 
-> ❓**How many levels** **on average** users complete before uninstalling within a day.
+**3.** ❓**How many levels** **on average** users complete before uninstalling within a day.
+
 ```sql
 WITH user_first_last_day AS (
   SELECT
@@ -555,7 +556,7 @@ from churn_total_complete
 -- Output: 5.3 -- 
 ```
 
-#### 💡 Observation:
+### 💡 Observation:
 🎮 Users who uninstall within a day complete an average of **5.3 levels** before leaving, indicating that early churn often occurs after only limited gameplay experience.
 
 </details>
