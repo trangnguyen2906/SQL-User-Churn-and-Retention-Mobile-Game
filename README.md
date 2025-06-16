@@ -204,7 +204,8 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 #### 🟡 **Daily & Monthly Install:** The number of new installs each day.
    
 > 🎯Analyze acquisition trends and evaluate campaign effectiveness.
-> 🎯Supports cohort-based retention analysis and seasonal comparisons.
+
+  🎯Supports cohort-based retention analysis and seasonal comparisons.
 
 ```sql
 -- daily_install --
