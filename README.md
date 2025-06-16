@@ -8,7 +8,9 @@
 1. [📌 Background & Overview](#-background--overview)
 3. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)
 4. [⚒️ Main Process](#%EF%B8%8F-main-process)
-5. [🔍 Final Conclusion & Recommendations](#-final-conclusion--recommendations)  
+   - 🔁 [a. Retention Analysis](#a-retention-analysis)  
+   - 💔 [b. Churn Analysis](#b-churn-analysis)  
+6. [🔍 Final Conclusion & Recommendations](#-final-conclusion--recommendations)  
 
 
 ## 📌 **Background & Overview**
@@ -155,7 +157,7 @@ I transformed raw Firebase event logs into simplified, queryable views to suppor
 
 ## 2️⃣ SQL/ Python Analysis
 
-### 🔍 Retention Analysis
+### a. 🔍 Retention Analysis
 > In mobile games, retention measures how well a game keeps players coming back over time. It reflects product stickiness, onboarding success, and long-term engagement. This section focuses on calculating retention-related metrics using SQL with visualizations.
 
 #### 🟡 **Active Users (DAU & MAU):** How many unique users open the app daily (DAU) and monthly (MAU).
@@ -377,7 +379,7 @@ ORDER BY r.install_month, r.months_after_install
 - ⚠️ Retention data for **September and October** is **incomplete** due to the dataset ending on **October 3**, so long-term trends for these cohorts are not fully available.
 
 
-### 🔍 **Churn Analysis**
+### b. 🔍 **Churn Analysis**
 > Churn is defined as **users who do not return after a certain number of days since installation.** This helps identify early **user drop-off** and guide retention strategy improvements.
 
 #### 🟡 Churn Rates After 3, 7, 14, 30 Days
