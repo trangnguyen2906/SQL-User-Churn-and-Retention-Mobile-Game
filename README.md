@@ -568,7 +568,7 @@ from churn_total_complete
 
 ### ✨ Key Takeaways:
 
-#### 🔻 1. Reduce Churn
+### 🔻 1. Reduce Churn
 
 ✔️ **Improve Onboarding & First-Day Experience**  
 
@@ -587,7 +587,7 @@ All app removals occurred on **Android devices**.
 
 → Implement platform-specific **crash fixes**, improve **load speed**, and ensure **UI responsiveness** on Android.
 
-#### 🔺 2. Enhance Retention
+### 🔺 2. Enhance Retention
 
 ✔️ **Strengthen Engagement After First Session**  
 
