@@ -9,7 +9,7 @@
 3. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)
 4. [⚒️ Main Process](#%EF%B8%8F-main-process)
    - 🔁 [a. Retention Analysis](#a--retention-analysis)  
-   - 💔 [b. Churn Analysis](#b-churn-analysis)  
+   - 🔚 [b. Churn Analysis](#b--churn-analysis)  
 6. [🔍 Final Conclusion & Recommendations](#-final-conclusion--recommendations)  
 
 
